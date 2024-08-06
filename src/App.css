@@ -46,18 +46,14 @@
 }
 
 .user{
-border: 3px solid black;
+border: 3px solid rgb(0, 0, 0);
 border-radius:5px ;
 width: 400px;
 bottom: 5px;
 }
 .form-wrappper{
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   width: 200px;
 display: flex;
 justify-content: ;
-}
-
-.button-link{
-  color: palevioletred;
 }
