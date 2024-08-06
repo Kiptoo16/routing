@@ -28,7 +28,9 @@ fetch(`http://localhost:3000/users/${id}`)
         <h3>Email: {user.email}</h3>
         <h3>Company: {user.company.name}</h3>
  </div>
-        )
+
+ 
+)
 }
 
 export default UserDetails

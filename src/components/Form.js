@@ -1,11 +1,15 @@
 import React, {useState} from 'react'
-
+import { useNavigate } from 'react-router-dom'
+//import { Form } from 'react-router-dom'
 function Form({users, setUsers}) {
 
     const[formData, setFormData] = useState({
         name : "",
         username : ""
     })
+
+const navigate = useNavigate()
+
 
 const handleOnChange =(event)=>{
     const name = event.target.name
@@ -15,6 +19,7 @@ const handleOnChange =(event)=>{
         ...formData, [name]: value
     })
     }
+    
  
     const handleSubmit =(e)=> {
         e.preventDefault()
@@ -34,7 +39,7 @@ setFormData({
     name: "",
     username :""
 })
-
+navigate("/")
 
     }  
 
